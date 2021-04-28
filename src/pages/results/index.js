@@ -2,6 +2,20 @@ import React from "react";
 import axios from 'axios';
 import { withRouter } from "react-router";
 import { Link } from "react-router-dom";
+/** @jsxImportSource @emotion/react */
+// import React from 'react';
+import { css } from '@emotion/react';
+
+const card = css`
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    text-align: center;
+    margin: 10px 5px;
+
+    &:hover {
+        background-color: lightgray;
+        transform: scale(1.05);
+    }
+    `;
 
 class Results extends React.Component {
 
@@ -30,10 +44,10 @@ class Results extends React.Component {
         <h1>Search Results</h1>
         <div className="wrap">
           {list.map((item, index) => (
-            <Link to={`/detail/${item.id}`}>
-              <div className="card" style={{ width: '18rem', marginTop: '20px' }} key={index}>
+            <Link to={`/detail/${item.id}`} style={{ textDecoration: 'none' }}>
+              <div className="card text-center" style={{ width: '20rem', marginTop: '20px' }} css={card} key={index}>
                 <img src={`https://image.tmdb.org/t/p/w500/${item.poster_path}`} className="card-img-top" alt="..." />
-                <div className="card-body">
+                <div className="card-body text-dark">
                   <h5 className="card-title">{ item.title }</h5>
                   <p className="card-text">{ item.overview }</p>
                 </div>

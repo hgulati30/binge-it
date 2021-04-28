@@ -8,17 +8,15 @@ import {
 import axios from 'axios';
 import './App.css'
 
-import Home from './pages/home'
-import Upcoming from './pages/upcoming'
-import Top from './pages/top'
-import Detail from './pages/detail'
-import Results from './pages/results'
+import Home from './pages/home';
+import Upcoming from './pages/upcoming';
+import Top from './pages/top';
+import Detail from './pages/detail';
+import Results from './pages/results';
+import Calculator from './pages/calculator';
 import logo from './movie_icon.png';
-
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Navbar, Nav, Form, FormControl } from 'react-bootstrap'
-
 
 /**
  * Route Config
@@ -48,6 +46,10 @@ const routes = [
   {
     path: "/results/:keyword",
     component: Results
+  },
+  {
+    path: "/calculator",
+    component: Calculator
   }
 ];
 
@@ -85,6 +87,7 @@ export default class App extends React.Component {
               </Link>
             </Navbar.Brand>
             <Nav className="mr-auto">
+            <Nav.Link href="/calculator">Calculator</Nav.Link>
               <Nav.Link href="/by-catagory">By Catagory</Nav.Link>
               <Nav.Link href="/top">Top Rated</Nav.Link>
               <Nav.Link href="/upcoming">Upcoming</Nav.Link>
@@ -113,6 +116,17 @@ export default class App extends React.Component {
                 />
               ))}
             </Switch>
+          </div>
+
+          <div className="d-flex flex-column" style={{backgroundColor: '#343a40', color: '#9a9da0', padding: '15px 5px', marginTop: '100px'}}>
+            <footer className="footer">
+              <div>
+                <span>&copy; Binge-It</span>
+              </div>
+              <div className="ml-auto">
+                <a href="https://github.com/osu-cs499-w21/final-project-final-project-team-2">Github repo</a>
+              </div>
+            </footer>
           </div>
         </Router>
       </div>

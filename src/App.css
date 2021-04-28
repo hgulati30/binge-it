@@ -1,47 +1,55 @@
 .bi {
-  font-size: 2em;
-  color: white;
-  cursor: pointer;
+	font-size: 2em;
+	color: white;
+	cursor: pointer;
 }
 
 .menu-navigation {
-  position: absolute;
-  background-color: #343a40;
-  width: 200px;
-  font-size: 23px;
-  color: white;
-  left: 5px;
-  top: 65px;
-  display: none;
+	position: absolute;
+	background-color: #343a40;
+	width: 200px;
+	font-size: 23px;
+	color: white;
+	left: 5px;
+	top: 65px;
+	display: none;
 }
 
 .user-navigation {
-  position: absolute;
-  background-color: #343a40;
-  width: 200px;
-  font-size: 23px;
-  color: white;
-  right: 5px;
-  top: 65px;
-  display: none;
+	position: absolute;
+	background-color: #343a40;
+	width: 200px;
+	font-size: 23px;
+	color: white;
+	right: 5px;
+	top: 65px;
+	display: none;
 }
 
 .show {
-  display: block;
+	display: block;
 }
 
 ul {
-  list-style-type: none;
+	list-style-type: none;
 }
 
 li {
-  height: 45px;
-  line-height: 45px;
+	height: 45px;
+	line-height: 45px;
 }
 
 .wrap {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+/* Calculator CSS */
+.btn-calculator {
+	background-color: green;
+}
+.btn-calculator-selected{
+	background-color:blue;
 }

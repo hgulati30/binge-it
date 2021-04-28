@@ -41,7 +41,7 @@ export default class Top extends React.Component {
         <h1>Top Rated</h1>
         <div className="wrap">
           {list.map(item => (
-            <Link to={`/detail/${item.id}`}>
+            <Link to={`/detail/${item.id}`} style={{ textDecoration: 'none' }}>
             <div className="card text-center" style={{ width: '20rem', marginTop: '20px' }} css={card}>
               <img src={`https://image.tmdb.org/t/p/w500/${item.poster_path}`} className="card-img-top" alt="..." />
               <div className="card-body text-dark">
