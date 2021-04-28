@@ -1,4 +1,5 @@
-# Getting Started with Create React App
+# Binge It
+This project was created in collaboration with Lucas Pichette (Lucas-Pichette) and Qiuhong Li (li-qiuhong-0573). 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
